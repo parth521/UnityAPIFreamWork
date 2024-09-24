@@ -1494,6 +1494,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenName: 2
+  errorMessages: {fileID: 11400000, guid: 651acfe4fb2324c4ca203afa9ca55e8e, type: 2}
+  errorMessagetxt: {fileID: 282021246}
 --- !u!1 &883929722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3460,6 +3462,7 @@ MonoBehaviour:
   studentIdentifierInputField: {fileID: 1558823932}
   passwordInputField: {fileID: 497251024}
   loginButton: {fileID: 1110343723}
+  errorMessages: {fileID: 11400000, guid: 651acfe4fb2324c4ca203afa9ca55e8e, type: 2}
 --- !u!1 &2036768896
 GameObject:
   m_ObjectHideFlags: 0

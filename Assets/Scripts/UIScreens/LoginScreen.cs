@@ -11,6 +11,7 @@ public class LoginScreen : UIElement
     [SerializeField] private TMP_InputField studentIdentifierInputField;
     [SerializeField] private TMP_InputField passwordInputField;
     [SerializeField] private Button loginButton;
+    [SerializeField] private ErrorMessages errorMessages;
     public override void Show(Action callback = null) {
         base.Show();
         loginAPI.OnSuccessActions.Add(OnLoginSuccess);
@@ -40,6 +41,7 @@ public class LoginScreen : UIElement
     private void OnLoginFailed()
     {
         UIManager.Instance.HideScreen(UIScreen.loadingScreen);
+        errorMessages.currentErrorType = ErrorType.UnauthorizedAccess;
         UIManager.Instance.ShowScreen(UIScreen.errorPopup);
     }
 }
